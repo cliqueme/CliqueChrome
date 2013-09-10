@@ -1,5 +1,5 @@
 {
-    "name": "My awesome extension :)",
+    "name": "Append Html",
     "version": "0.1",
     "icons": { 
         "16": "/img/icons/icon_16.png",
@@ -7,9 +7,10 @@
         "128": "/img/icons/icon_128.png" 
     },
 
-    "description": "Yay, I'm so useless.",
+    "description": "This extension just append the html to the page",
     "permissions": [
-        "geolocation"
+        "storage",
+        "tabs"
     ],
 
     "content_scripts": [
@@ -21,6 +22,11 @@
                 ]
         }
     ],
+
+    "browser_action": {
+        "default_icon": "/img/icons/icon_48.png",
+        "default_popup": "popup.html"
+    },
 
     "manifest_version": 2
 }
