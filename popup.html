@@ -5,14 +5,20 @@
     <style>
 
         body {
-            width: 400px;
-            height: 300px;
+            width: 500px;
         }
 
         textarea {
             width: 100%;
-            height: 270px;
         }
+		
+		input {
+			width: 100%;
+		}
+		
+		#txt-javascript, #txt-html {
+			height: 200px;
+		}
 
         .go-wrapper {
             text-align: center;
@@ -25,7 +31,10 @@
 </head>
 <body>
 <div>
-    <textarea id="html-to-append"></textarea>
+	<input type="text" placeholder="url" id="txt-url" />
+    <input type="text" placeholder="site id" id="txt-siteid" />
+    <input type="text" placeholder="selector" id="txt-selector" />
+    <textarea id="txt-html" placeholder="html"></textarea>
 
     <div class="go-wrapper">
         <button id="btn-go">Append and Reload</button>
